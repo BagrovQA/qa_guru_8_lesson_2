@@ -7,6 +7,6 @@ def test_google_search_success():
 
 
 def test_google_search_fail():
-    browser.element('[name="q"]').should(be.blank).type('GURU3563po563phpouhp62562QAQAQA').press_enter()
+    browser.element('[name="q"]').should(be.blank).type('GURU3563po563ph62562QA').press_enter()
     browser.element('[id="result-stats"]').should(have.text('Результатов: примерно 0'))
     print('Поиск ожидаемо не дает результатов')

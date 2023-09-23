@@ -10,6 +10,7 @@ def open_browser():
 
     browser.quit()
 
+
 @pytest.fixture(autouse=True)
 def setting_browser():
     browser.driver.set_window_size(1920, 1080)
